@@ -25,8 +25,8 @@ for person in secrets['ADMIN_ACCOUNTS']:
 
 for item in secrets['DEFAULT_CATEGORIES']:
     ct, _created = transactionCategory.objects.get_or_create(
-        name=item['NAME'],
-        income=item['INCOME'],
+        name=item['NAME'], 
+        income=item['INCOME'], 
         description=item['DESCRIPTION'],
         )
     if _created:
