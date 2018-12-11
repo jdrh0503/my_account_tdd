@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
-# import persons.urls as person_urls
-# import accounts.urls as account_urls
+import persons.urls as person_urls
+import accounts.urls as account_urls
 from persons.views import signupView
 
 urlpatterns = [
